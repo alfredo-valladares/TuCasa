@@ -1437,6 +1437,186 @@
       </div>
     </div>
   </footer>
+<!--Cinta Alfredo-->
+
+    <style>
+        .cintilla-container {
+            position: fixed;
+            bottom: -100px;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 8px 15px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            transition: bottom 0.3s ease;
+            z-index: 1000;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .cintilla-container.visible {
+            bottom: 0;
+        }
+        
+        .cintilla-logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .cintilla-content {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+        
+        .cintilla-text {
+            font-size: 12px;
+            margin-right: 10px;
+            display: none;
+        }
+        
+        .cintilla-beta {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-left: 8px;
+            display: none;
+        }
+        
+        .cintilla-contact {
+            display: flex;
+            align-items: center;
+        }
+        
+        .cintilla-contact a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .cintilla-contact a:hover {
+            text-decoration: underline;
+        }
+        
+        .cintilla-contact i {
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        
+        .cintilla-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        /* Versión para móvil */
+        @media (max-width: 768px) {
+            .cintilla-container {
+                padding: 6px 10px;
+            }
+            
+            .cintilla-logo {
+                height: 25px;
+            }
+            
+            .cintilla-contact a span {
+                display: none;
+            }
+            
+            .cintilla-contact a i {
+                margin-right: 0;
+                font-size: 16px;
+            }
+            
+            .cintilla-contact a {
+                margin: 0 5px;
+            }
+        }
+        
+        /* Versión para escritorio */
+        @media (min-width: 769px) {
+            .cintilla-text {
+                display: inline;
+            }
+            
+            .cintilla-beta {
+                display: inline-block;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <div class="cintilla-container" id="cintilla">
+        <div class="cintilla-content">
+            <img src="https://www.ingenieriadigital360.com.mx/img/logo.png" alt="Logo" class="cintilla-logo">
+            <div class="cintilla-text">
+                <strong>Jose Alfredo Valladares Villanueva</strong> | 
+                Web en fase beta
+                <span class="cintilla-beta">BETA</span>
+            </div>
+        </div>
+        <div class="cintilla-contact">
+            <a href="https://www.ingenieriadigital360.com.mx/" target="_blank" title="Sitio Web">
+                <i class="fas fa-globe"></i>
+                <span>Sitio Web</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61572103840113" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://wa.me/527774583223" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+        <button class="cintilla-close" id="closeCintilla" title="Cerrar">×</button>
+    </div>
+
+    <script>
+        // Mostrar/ocultar cintilla al hacer scroll
+        let lastScroll = 0;
+        const cintilla = document.getElementById('cintilla');
+        const closeBtn = document.getElementById('closeCintilla');
+        
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                // Scroll hacia abajo
+                cintilla.classList.add('visible');
+            } else if (currentScroll < lastScroll && currentScroll < 50) {
+                // Scroll hacia arriba en la parte superior
+                cintilla.classList.remove('visible');
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // Ocultar al hacer clic en la X
+        closeBtn.addEventListener('click', function() {
+            cintilla.classList.remove('visible');
+        });
+        
+        // Mostrar al cargar la página después de 3 segundos
+        setTimeout(function() {
+            cintilla.classList.add('visible');
+            setTimeout(function() {
+                cintilla.classList.remove('visible');
+            }, 5000);
+        }, 3000);
+    </script>
 
   <script>
     // Header scroll effect
