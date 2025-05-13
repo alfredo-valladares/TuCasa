@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inversión en Terrenos Yecapixtla | Tu Casa en Yecapixtla</title>
+  <meta name="description" content="Últimos terrenos disponibles en Yecapixtla con escrituración garantizada. Inversión segura con excelente plusvalía. ¡Contáctanos hoy mismo!">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <style>
+    :root {
+      --primary: #27aae1;
+      --secondary: #f49c1e;
+      --cta: #f36f21;
+      --cta-hover: #e65c1a;
+      --dark: #333333;
+      --light: #ffffff;
+      --gray: #f9f9f9;
+      --dark-blue: #1a3e72;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-top: 80px;
+    }
+    
+    /* Header & Navigation */
+    header {
+      background-color: var(--light);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 15px 0;
+      transition: all 0.3s ease;
+    }
+    
+    header.scrolled {
+      padding: 10px 0;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo h1 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    
+    .logo span {
+      color: var(--secondary);
+      margin-left: 5px;
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links li {
+      margin-left: 30px;
+    }
+    
+    .nav-links a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: var(--secondary);
+    }
+    
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: var(--secondary);
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+    
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    
+    /* Hamburger Menu - Estilo Casa */
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      width: 30px;
+      height: 25px;
+      position: relative;
+      z-index: 1001;
+    }
+    
+    .hamburger span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: var(--primary);
+      border-radius: 3px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+    }
+    
+    /* Diseño en forma de casa */
+    .hamburger span:nth-child(1) {
+      top: 0;
+      transform-origin: left center;
+    }
+    
+    .hamburger span:nth-child(2) {
+      top: 11px;
+      transform-origin: left center;
+    }
+    
+    .hamburger span:nth-child(3) {
+      top: 11px;
+      transform-origin: left center;
+      width: 50%;
+      left: 50%;
+    }
+    
+    .hamburger span:nth-child(4) {
+      top: 22px;
+      transform-origin: left center;
+    }
+    
+    .hamburger.open span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 0;
+      left: 3px;
+    }
+    
+    .hamburger.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+    
+    .hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 22px;
+      left: 3px;
+      width: 100%;
+    }
+    
+    .hamburger.open span:nth-child(4) {
+      width: 0%;
+      opacity: 0;
+    }
+    
+    /* Hero Section Mejorado */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1580&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--light);
+      padding: 150px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23ffffff"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%23ffffff"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23ffffff"/></svg>');
+      background-size: cover;
+      z-index: 1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      font-weight: 800;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      line-height: 1.2;
+      animation: fadeInDown 1s ease;
+    }
+    
+    .hero p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      animation: fadeInUp 1s ease 0.3s both;
+    }
+    
+    .highlight {
+      color: var(--secondary);
+      font-weight: 700;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--cta);
+      color: var(--light);
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      border: none;
+      font-size: 1.1rem;
+      box-shadow: 0 5px 15px rgba(243, 111, 33, 0.4);
+      position: relative;
+      overflow: hidden;
+      animation: pulse 2s infinite 1s;
+    }
+    
+    .btn:hover {
+      background-color: var(--cta-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(243, 111, 33, 0.6);
+    }
+    
+    .btn:active {
+      transform: translateY(1px);
+    }
+    
+    .btn i {
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    .btn:hover i {
+      transform: translateX(5px);
+    }
+    
+    .location-marker {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      animation: fadeInRight 1s ease 0.6s both;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+    }
+    
+    .location-marker i {
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-right: 10px;
+      animation: bounce 2s infinite;
+    }
+    
+    .location-marker p {
+      color: var(--dark);
+      font-size: 0.9rem;
+      margin: 0;
+      text-shadow: none;
+    }
+    
+    /* Animaciones */
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(243, 111, 33, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 15px rgba(243, 111, 33, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(243, 111, 33, 0);
+      }
+    }
+    
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+    
+    /* Secciones */
+    .section {
+      padding: 80px 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .section-title h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    
+    .section-title p {
+      color: var(--dark);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    /* Beneficios Section */
+    .benefits-section {
+      background-color: var(--light);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      margin: 30px auto;
+      max-width: 1200px;
+    }
+
+    .benefits-title {
+      color: var(--primary);
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .benefits-title::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--secondary);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .benefit-card {
+      background-color: var(--light);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: flex-start;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-icon {
+      background-color: rgba(244, 156, 30, 0.1);
+      color: var(--secondary);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .benefit-content h4 {
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .benefit-content p {
+      color: var(--dark);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Propiedades Section */
+    .properties-section {
+      padding: 60px 0;
+    }
+
+    .property-card {
+      background: var(--light);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .property-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .property-img {
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .property-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .property-card:hover .property-img img {
+      transform: scale(1.05);
+    }
+
+    .property-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: var(--cta);
+      color: var(--light);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      z-index: 2;
+    }
+
+    .property-content {
+      padding: 20px;
+    }
+
+    .property-title {
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .property-location {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      color: var(--dark);
+      font-size: 0.9rem;
+    }
+
+    .property-location i {
+      color: var(--secondary);
+      margin-right: 8px;
+    }
+
+    .property-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      color: var(--dark);
+      font-size: 0.9rem;
+    }
+
+    .feature i {
+      color: var(--secondary);
+      margin-right: 5px;
+    }
+
+    .property-price {
+      color: var(--cta);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .property-price span {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--dark);
+    }
+
+    /* About Section */
+    .about-section {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      background-color: var(--gray);
+      padding: 60px;
+      border-radius: 15px;
+      margin: 40px 0;
+    }
+
+    .about-img {
+      flex: 1;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .about-content h3 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .about-features {
+      margin-top: 30px;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .about-feature i {
+      color: var(--secondary);
+      font-size: 1.5rem;
+      margin-right: 15px;
+      margin-top: 3px;
+    }
+
+    /* Investment Section */
+    .investment-section {
+      background-color: var(--dark-blue);
+      color: var(--light);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .investment-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .investment-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--light);
+    }
+
+    .investment-text {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+
+    .investment-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(199px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+
+    .investment-step {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 19px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .investment-step:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .step-number {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: var(--secondary);
+      color: var(--dark);
+      border-radius: 50%;
+      font-weight: 700;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+
+    .step-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--light);
+    }
+
+    /* Testimonials Section */
+    .testimonials-section {
+      padding: 80px 0;
+      background-color: var(--gray);
+    }
+
+    .testimonial-card {
+      background: var(--light);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      margin: 0 15px;
+      position: relative;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .testimonial-text::before {
+      content: '"';
+      font-size: 4rem;
+      color: var(--secondary);
+      opacity: 0.2;
+      position: absolute;
+      top: -20px;
+      left: -15px;
+      line-height: 1;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+
+    .author-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 15px;
+    }
+
+    .author-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .author-info h4 {
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    .author-info p {
+      color: var(--dark);
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--light);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--dark);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(39, 170, 225, 0.2);
+    }
+
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background: var(--cta);
+      color: var(--light);
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .submit-btn:hover {
+      background: var(--cta-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(243, 111, 33, 0.4);
+    }
+
+    /* Call to Action */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--dark-blue) 100%);
+      color: var(--light);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .cta-title {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-text {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 60px 0 20px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-column h3 {
+      color: var(--light);
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-column h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      background-color: var(--secondary);
+    }
+
+    .footer-column p {
+      margin-bottom: 15px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: var(--light);
+      text-decoration: none;
+      transition: color 0.3s ease;
+      display: inline-block;
+    }
+
+    .footer-links a:hover {
+      color: var(--secondary);
+      transform: translateX(5px);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: var(--light);
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: var(--secondary);
+      transform: translateY(-5px);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--light);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.5s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      }
+      
+      .nav-links.active {
+        right: 0;
+      }
+      
+      .nav-links li {
+        margin: 15px 0;
+      }
+      
+      .hamburger {
+        display: block;
+      }
+      
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      
+      .hero p {
+        font-size: 1.1rem;
+      }
+      
+      .location-marker {
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .about-section {
+        flex-direction: column;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .section {
+        padding: 60px 0;
+      }
+      
+      .hero {
+        padding: 100px 0;
+      }
+      
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+      }
+      
+      .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+      }
+      
+      .location-marker {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin: 30px auto 0;
+        width: max-content;
+      }
+
+      .benefits-section {
+        padding: 30px 20px;
+      }
+      
+      .benefits-title {
+        font-size: 1.5rem;
+      }
+      
+      .benefit-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .benefit-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      .about-section {
+        padding: 40px 20px;
+      }
+
+      .contact-form {
+        padding: 30px 20px;
+      }
+
+      .cta-title {
+        font-size: 1.8rem;
+      }
+
+      .cta-text {
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      
+      .hero p {
+        font-size: 0.9rem;
+      }
+
+      .benefits-title {
+        font-size: 1.3rem;
+      }
+      
+      .benefit-content h4 {
+        font-size: 1.1rem;
+      }
+      
+      .benefit-content p {
+        font-size: 0.9rem;
+      }
+
+      .property-img {
+        height: 200px;
+      }
+
+      .cta-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header id="header">
+    <div class="container">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>Tu Casa en <span>YECAPIXTLA</span></h1>
+        </div>
+        
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#propiedades">Propiedades</a></li>
+          <li><a href="#inversion">Inversión</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section Mejorado -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h2 class="animate__animated animate__fadeInDown">❗<span class="highlight">¡ÚLTIMOS LOTES EN YECAPIXTLA!</span> ADQUIERE EL TUYO HOY CON <span class="highlight">MENSUALIDADES</span>❗</h2>
+      <p class="animate__animated animate__fadeInUp">"Terrenos planos, con servicios de luz y escrituración garantizada. <span class="highlight">¡A solo 4 minutos del centro y 80 min de CDMX!</span>"</p>
+      <a href="#contacto" class="btn animate__animated animate__fadeInUp animate__delay-1s">📞 ¡QUIERO MI LOTE AHORA! <i class="fas fa-arrow-right"></i></a>
+    </div>
+    
+    <div class="location-marker">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Ubicación estratégica en Yecapixtla</p>
+    </div>
+  </section>
+
+  <!-- Beneficios Section -->
+  <section class="section">
+    <div class="container-fluid">
+      <div class="benefits-section">
+        <h3 class="benefits-title">¿Por qué invertir en terrenos con nosotros?</h3>
+        
+        <div class="benefits-grid">
+          <!-- Beneficio 1 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="benefit-content">
+              <h4>Seguridad jurídica</h4>
+              <p>Todos nuestros terrenos cuentan con escritura pública registrada y libre de gravamen.</p>
+            </div>
+          </div>
+          
+          <!-- Beneficio 2 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="benefit-content">
+              <h4>Alta plusvalía</h4>
+              <p>Ubicaciones estratégicas con crecimiento urbano garantizado en los próximos años.</p>
+            </div>
+          </div>
+          
+          <!-- Beneficio 3 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <div class="benefit-content">
+              <h4>Financiamiento flexible</h4>
+              <p>Enganche desde el 10% y planes de pago personalizados según tus necesidades.</p>
+            </div>
+          </div>
+          
+          <!-- Beneficio 4 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="benefit-content">
+              <h4>Ubicación privilegiada</h4>
+              <p>Cercanía a vialidades principales, centros comerciales y áreas de desarrollo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Propiedades Section -->
+  <section class="section properties-section" id="propiedades">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nuestros Terrenos Disponibles</h2>
+        <p>Oportunidades de inversión con las mejores ubicaciones en Yecapixtla</p>
+      </div>
+      
+      <div class="properties-grid">
+        <!-- Propiedad 1 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Lote en Residencial Las Flores">
+            <span class="property-badge">ÚLTIMOS 3 LOTES</span>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Lote en Residencial Las Flores</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i> Yecapixtla, Morelos
+            </div>
+            <div class="property-features">
+              <div class="feature">
+                <i class="fas fa-ruler-combined"></i> 300 m²
+              </div>
+              <div class="feature">
+                <i class="fas fa-bolt"></i> Luz eléctrica
+              </div>
+              <div class="feature">
+                <i class="fas fa-road"></i> Acceso pavimentado
+              </div>
+            </div>
+            <div class="property-price">
+              $450,000 <span>MXN | Enganche desde $45,000</span>
+            </div>
+            <a href="#contacto" class="btn">Más información</a>
+          </div>
+        </div>
+
+        <!-- Propiedad 2 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1580&q=80" alt="Lote en Valle Escondido">
+            <span class="property-badge">PRECIO ESPECIAL</span>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Lote en Valle Escondido</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i> Yecapixtla, Morelos
+            </div>
+            <div class="property-features">
+              <div class="feature">
+                <i class="fas fa-ruler-combined"></i> 250 m²
+              </div>
+              <div class="feature">
+                <i class="fas fa-bolt"></i> Luz eléctrica
+              </div>
+              <div class="feature">
+                <i class="fas fa-tree"></i> Área verde cercana
+              </div>
+            </div>
+            <div class="property-price">
+              $380,000 <span>MXN | Enganche desde $38,000</span>
+            </div>
+            <a href="#contacto" class="btn">Más información</a>
+          </div>
+        </div>
+
+        <!-- Propiedad 3 -->
+        <div class="property-card">
+          <div class="property-img">
+            <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Lote en Jardines de Yecapixtla">
+            <span class="property-badge">NUEVO DESARROLLO</span>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Lote en Jardines de Yecapixtla</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i> Yecapixtla, Morelos
+            </div>
+            <div class="property-features">
+              <div class="feature">
+                <i class="fas fa-ruler-combined"></i> 350 m²
+              </div>
+              <div class="feature">
+                <i class="fas fa-bolt"></i> Luz eléctrica
+              </div>
+              <div class="feature">
+                <i class="fas fa-store"></i> Cerca de comercios
+              </div>
+            </div>
+            <div class="property-price">
+              $520,000 <span>MXN | Enganche desde $52,000</span>
+            </div>
+            <a href="#contacto" class="btn">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investment Section -->
+  <section class="investment-section" id="inversion">
+    <div class="container-fluid">
+      <div class="investment-container">
+        <h2 class="investment-title">Invierte con Confianza en Yecapixtla</h2>
+        <p class="investment-text">Nuestro proceso de inversión es simple, transparente y diseñado para brindarte seguridad en cada paso. Más de 200 clientes satisfechos avalan nuestro compromiso con la excelencia.</p>
+        
+        <div class="investment-steps">
+          <div class="investment-step">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Selección del Terreno</h3>
+            <p>Te asesoramos para elegir el mejor terreno según tus necesidades de inversión.</p>
+          </div>
+          
+          <div class="investment-step">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Documentación</h3>
+            <p>Revisión exhaustiva de escrituras y trámites legales para tu seguridad.</p>
+          </div>
+          
+          <div class="investment-step">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Personalización</h3>
+            <p>Planes de pago flexibles adaptados a tu situación financiera.</p>
+          </div>
+          
+          <div class="investment-step">
+            <div class="step-number">4</div>
+            <h3 class="step-title">Escrituración</h3>
+            <p>Proceso notarial completo para garantizar tu propiedad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div class="about-section">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Equipo de Tu Casa en Yecapixtla">
+        </div>
+        <div class="about-content">
+          <h3>Expertos en Bienes Raíces en Yecapixtla</h3>
+          <p>Con más de 15 años de experiencia en el mercado inmobiliario de Morelos, en <strong>Tu Casa en Yecapixtla</strong> nos especializamos en identificar las mejores oportunidades de inversión en terrenos con alto potencial de plusvalía.</p>
+          <p>Nuestro equipo de profesionales está comprometido con ofrecerte transparencia, seguridad jurídica y asesoría personalizada en cada transacción.</p>
+          
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-medal"></i>
+              <div>
+                <h4>+15 años de experiencia</h4>
+                <p>Conocemos a profundidad el mercado local</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-home"></i>
+              <div>
+                <h4>+200 propiedades vendidas</h4>
+                <p>Clientes satisfechos que recomiendan nuestro servicio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonios">
+    <div class="container">
+      <div class="section-title">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Experiencias reales de inversionistas como tú</p>
+      </div>
+      
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Compré un terreno con Tu Casa en Yecapixtla hace 3 años y hoy ya ha duplicado su valor. El proceso fue muy transparente y la escrituración fue rápida. ¡Totalmente recomendados!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Roberto Martínez">
+            </div>
+            <div class="author-info">
+              <h4>Roberto Martínez</h4>
+              <p>Inversionista desde 2020</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Excelente atención y asesoría. Me ayudaron a encontrar el terreno perfecto para mi casa de retiro, con todas las garantías legales y a un precio justo. Muy profesionales."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Laura González">
+            </div>
+            <div class="author-info">
+              <h4>Laura González</h4>
+              <p>Propietaria en Valle Escondido</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title">¿Listo para invertir en tu futuro?</h2>
+      <p class="cta-text">Agenda una cita con nuestros asesores y descubre las mejores oportunidades de inversión en terrenos en Yecapixtla.</p>
+      <a href="#contacto" class="btn">AGENDAR CITA HOY <i class="fas fa-calendar-alt"></i></a>
+    </div>
+  </section>
+
+  <!-- Contacto Section -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contacto</h2>
+        <p>Completa el formulario y un asesor se comunicará contigo en menos de 24 horas</p>
+      </div>
+      
+      <div class="contact-form">
+        <form id="whatsappForm">
+          <div class="form-group">
+            <label for="name">Nombre completo*</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono*</label>
+            <input type="tel" id="phone" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="interest">Terreno de interés</label>
+            <select id="interest" class="form-control">
+              <option value="">Selecciona una opción</option>
+              <option value="Residencial Las Flores">Residencial Las Flores</option>
+              <option value="Valle Escondido">Valle Escondido</option>
+              <option value="Jardines de Yecapixtla">Jardines de Yecapixtla</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje o preguntas</label>
+            <textarea id="message" class="form-control" placeholder="Ej: ¿Qué formas de pago manejan?"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fab fa-whatsapp"></i> ENVIAR POR WHATSAPP
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Tu Casa en Yecapixtla</h3>
+          <p>Especialistas en inversión en terrenos con alta plusvalía en Yecapixtla, Morelos.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/527352863565"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#propiedades">Propiedades</a></li>
+            <li><a href="#inversion">Proceso de Inversión</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Av. Principal #123, Yecapixtla, Morelos</p>
+          <p><i class="fas fa-phone"></i> 735 286 3565</p>
+          <p><i class="fas fa-envelope"></i> info@tucasayecapixtla.com</p>
+          <p><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 6pm</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Tu Casa en Yecapixtla. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('open');
+      navLinks.classList.toggle('active');
+    });
+    
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('active');
+      });
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // WhatsApp Form Submission
+    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const interest = document.getElementById('interest').value;
+      const message = document.getElementById('message').value;
+      
+      const whatsappNumber = '527352863565';
+      const text = `Hola, soy ${name}. Estoy interesado/a en ${interest || 'un terreno'} de Tu Casa en Yecapixtla.%0A%0A*Teléfono:* ${phone}%0A*Email:* ${email || 'No proporcionado'}%0A*Mensaje:* ${message || 'No especificado'}`;
+      
+      window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+    });
+
+    // Simple testimonial slider
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial-card');
+    
+    function showTestimonial(index) {
+      testimonials.forEach((testimonial, i) => {
+        testimonial.style.display = i === index ? 'block' : 'none';
+      });
+    }
+    
+    // Initialize
+    showTestimonial(0);
+    
+    // Auto-rotate testimonials
+    setInterval(() => {
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }, 5000);
+  </script>
+</body>
+</html>
